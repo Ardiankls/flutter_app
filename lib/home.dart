@@ -135,6 +135,31 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
+          Container(
+            margin: EdgeInsets.all(8),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                FloatingActionButton(
+                  backgroundColor: Color(hexColor('#8360FE')),
+                  onPressed: () {
+                    setState(() {
+                      if (favcolor == Colors.white) {
+                        favcolor = Colors.red;
+                      } else if (favcolor == Colors.red) {
+                        favcolor = Colors.white;
+                      }
+                    });
+                  },
+                  child: Icon(
+                    Icons.favorite,
+                    color: favcolor,
+                  ),
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
