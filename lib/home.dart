@@ -10,7 +10,6 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   Color favcolor;
   int favvalue;
-  final ctrlNama = TextEditingController();
 
   hexColor(String colorhexcode) {
     String colornew = "0xff" + colorhexcode;
