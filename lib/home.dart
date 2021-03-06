@@ -96,6 +96,16 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                           ),
+                          Flexible(
+                            flex: 2,
+                            child: Padding(
+                              padding: const EdgeInsets.all(3.0),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(8),
+                                child: Lottie.asset("assets/cat4.json"),
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                     ),
